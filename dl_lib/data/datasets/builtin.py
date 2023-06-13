@@ -51,6 +51,12 @@ _PREDEFINED_SPLITS_COCO["coco"] = {
                            "coco/annotations/image_info_test-dev2017.json"),
     "coco_2017_val_100": ("coco/val2017",
                           "coco/annotations/instances_val2017_100.json"),
+    "gdd_coco_train":
+    ("GDD_COCO/train","GDD_COCO/annotations/gdd_train.json"),
+    "gdd_coco_val":
+    ("GDD_COCO/val","GDD_COCO/annotations/gdd_val.json"),
+    "gdd_coco_test":
+    ("GDD_COCO/test","GDD_COCO/annotations/gdd_test.json"),
 }
 
 
