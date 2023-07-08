@@ -69,6 +69,10 @@ with open("tools/dl_test", "w") as dl_lib_test:
     dl_lib_test.write(
         head + f"python3 {os.path.join(cur_dir, 'tools', 'test_net.py')} $@")
 
+with open("tools/dl_count", "w") as dl_lib_count:
+    dl_lib_count.write(
+        head + f"python3 {os.path.join(cur_dir, 'tools', 'count_params.py')} $@")
+
 setup(
     name="dl_lib",
     version="0.1",
@@ -95,5 +99,5 @@ setup(
     extras_require={"all": ["shapely", "psutil"]},
     ext_modules=get_extensions(),
     cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension},
-    scripts=["tools/dl_train", "tools/dl_test"],
+    scripts=["tools/dl_train", "tools/dl_test","tools/dl_count"],
 )
