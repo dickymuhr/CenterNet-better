@@ -119,9 +119,9 @@ def main(args):
 
 if __name__ == "__main__":
     args = default_argument_parser().parse_args()
-    print("soft link to {}".format(config.OUTPUT_DIR))
+    # print("soft link to {}".format(config.OUTPUT_DIR))
     config.link_log()
-    print("Command Line Args:", args)
+    # print("Command Line Args:", args)
     launch(
         main,
         args.num_gpus,
