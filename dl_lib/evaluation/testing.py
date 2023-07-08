@@ -6,8 +6,8 @@ import sys
 #     from collections.abc import Mapping, OrderedDict
 # except ImportError:
 #     from collections import Mapping, OrderedDict
-from collections.abc import Mapping, OrderedDict
-# from collections import Mapping, OrderedDict
+from collections.abc import Mapping
+from collections import OrderedDict
 
 import numpy as np
 
